@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GRAPHOLOGY</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
+    <link rel="stylesheet" href="/static/CSS/upload.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    
+<body>
+<div class="container p-4">
+    <div class="jumbotron">
+          <h2 class="display-4">Automated Behaviour Prediction Tool</h2>
+          <p class="lead">This is an online tool to predict the <strong>Personality Traits</strong> of a person using their handwriting    image</p>
+          <hr class="my-4">
+          <p class="lead">We are using machine learning concepts for predictions. To know more about it click below</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+            <form action="/upload" method="post" enctype="multipart/form-data" >            
+                <div class="container algn">
+                        <div class="form-group">
+                            <input class="form-control-file-lg algn" type="file" name="data_file" required/>
+                        </div>
+
+                        <div class="form-group algn">
+                            <button class="btn btn-primary btn-sm" >UPLOAD</button>
+                        </div>
+                </div>
+            </form>
+</div>
+    </body>
+</html>
